@@ -4,7 +4,6 @@ iPhoneアプリ「学校チャイム」のサポート窓口です。
 
 - サポート・よくある質問：https://hoshihaya.github.io/school-bell-app/
 - プライバシーポリシー：https://hoshihaya.github.io/school-bell-app/privacy.html
-- Web版：https://school-bell.gh.hoshihaya.com/
 
 ## お問い合わせ
 
