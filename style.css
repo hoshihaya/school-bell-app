@@ -1,0 +1,48 @@
+:root {
+  --ink: #1f2733;
+  --muted: #6b7684;
+  --accent: #2f6fed;
+  --shadow: 0 10px 30px rgba(20, 30, 50, 0.12);
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Segoe UI", Meiryo, sans-serif;
+  background:
+    repeating-linear-gradient(90deg, rgba(0,0,0,0.012) 0 1px, transparent 1px 96px),
+    linear-gradient(180deg, #f8f4ea 0%, #f2ecdd 100%);
+  background-attachment: fixed;
+  color: var(--ink);
+  min-height: 100vh;
+}
+.app-header {
+  position: sticky; top: 0; z-index: 20;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: saturate(1.5) blur(8px);
+  -webkit-backdrop-filter: saturate(1.5) blur(8px);
+  box-shadow: 0 2px 14px rgba(20, 30, 50, 0.07);
+}
+.app-header::after {
+  content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: 3px;
+  background: linear-gradient(90deg, #ff8a3d, #e5484d 40%, #7c3aed 75%, #2f6fed);
+}
+.app-header-inner { max-width: 680px; margin: 0 auto; padding: 15px 18px; display: flex; align-items: center; justify-content: center; }
+.home-link { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; border-radius: 10px; padding: 2px 6px; }
+.header-icon { width: 27px; height: 27px; flex: 0 0 auto; filter: drop-shadow(0 1px 1px rgba(0,0,0,0.12)); }
+.app-header h1 {
+  margin: 0; font-size: 1.72rem; font-weight: 800; letter-spacing: 0.04em;
+  background: linear-gradient(90deg, #ff8a3d, #e5484d 40%, #7c3aed 75%, #2f6fed);
+  -webkit-background-clip: text; background-clip: text;
+  -webkit-text-fill-color: transparent; color: transparent;
+}
+.doc { max-width: 680px; margin: 0 auto; padding: 28px 16px 60px; }
+.doc-card { background: #fff; border-radius: 16px; box-shadow: var(--shadow); padding: 26px 22px; line-height: 1.8; }
+.doc h2 { margin: 0 0 6px; font-size: 1.45rem; }
+.doc .updated { color: var(--muted); font-size: .85rem; margin: 0 0 18px; }
+.doc h3 { font-size: 1.05rem; margin: 26px 0 6px; padding-left: 10px; border-left: 4px solid var(--accent); }
+.doc p, .doc li, .doc dd { font-size: .95rem; overflow-wrap: anywhere; }
+.doc a { color: var(--accent); }
+.doc dt { font-weight: 700; margin-top: 14px; }
+.doc dd { margin: 4px 0 0; }
+.doc-nav { text-align: center; margin-top: 22px; font-size: .9rem; }
+.doc-nav a { color: var(--muted); margin: 0 10px; }
